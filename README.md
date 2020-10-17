@@ -26,9 +26,9 @@ The study_data DataFrame is then scrubbed to identify and data rows that have du
 
 The resulting DateFrame is called (cleaned_data). A set of Summary Statistics is generated for the cleaned_data set using two methods. 
 
-*1. Using multiple groupby methods using the 'Drug Regimen' column to create a set of summary DataFrames for each calculation of mean, median, variance, standard deviation, and standard error of the mean. Then merging the DataFrames to create a single final DataFrame (summary_stats)
+1. Using multiple groupby methods using the 'Drug Regimen' column to create a set of summary DataFrames for each calculation of mean, median, variance, standard deviation, and standard error of the mean. Then merging the DataFrames to create a single final DataFrame (summary_stats)
 
-*2. Using the groupby().agg method to generate the summary DataFrame (regimen_agg) in asigle line of code.
+2. Using the groupby().agg method to generate the summary DataFrame (regimen_agg) in asigle line of code.
 
 The results were identical DataFrames.
 
@@ -87,7 +87,7 @@ A single 'Mouse ID' was chosen from the set and a line plot of 'Tumor Volume vs.
 
 I also generated a line plot of all 25 mice in the Capamulin data set. All but one mouse shows the tumor volumes decreasing by the end of the study, but one mouse showed an increase in volume.
 
-![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture10.png)
+![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture11_Multi.png)
 
 ***
 ### Scatter Plots and Linear Regression:
@@ -95,8 +95,8 @@ I also generated a line plot of all 25 mice in the Capamulin data set. All but o
 
 The final step in the analysis consisted of grouping the Capamulin DataFrame (cap_data) by Mouse ID and calulating the mean of the Tumor Volumes and Mouse Weights in order to generate a scatter plot of 'Average Tumor Volume vs. Mouse Weight for the Capomulin Regimen'.
 
-![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture11_Scatter.png)
+![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture12_Scatter.png)
 
 The plot shows a positive correlation based on the generally linear pattern from lower left to upper right. This was confirmed by calculating the correlation coefficient (0.84) and calculating a linear regression line.
 
-![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture12_Regression.png)
+![alt tag](https://github.com/robertjbowen/matplotlib-challenge/blob/main/images/Picture13_Regression.png)
